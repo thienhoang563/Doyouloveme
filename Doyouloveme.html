@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love m</title>
+</head>
+<body>
+<h1>Do you love me</h1>
+<button onclick="yFunction()">Yes</button>
+<button id="btn" style="position:absolute; left: 81px; top: 80px;" onmouseover="nFunction()">No</button>
+<script>
+    function yFunction() {
+        alert("Of Course!");
+    }
+    function nFunction() {
+        var x = Math.round(Math.random() * window.innerHeight);
+        var y = Math.round(Math.random() * window.innerWidth);
+        document.getElementById('btn').style.left=x+'px';
+        document.getElementById('btn').style.top=y+'px';
+    }
+</script>
+</body>
+</html>
